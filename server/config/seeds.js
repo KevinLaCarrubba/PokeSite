@@ -12,7 +12,6 @@ db.once('open', async () => {
 
     const products = await Product.insertMany([
         {   
-            _id: 1,
             name: 'Pokemon Card1',
             description: 'Card Card Card',
             price: '2.99',
@@ -20,7 +19,6 @@ db.once('open', async () => {
             category: categories[0]._id,
         },
         {
-            _id: 2,
             name: 'Card2',
             description: 'Cards Cards',
             price: '3.99',
