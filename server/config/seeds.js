@@ -4,7 +4,7 @@ const { User, Product, Category } = require("../models");
 db.once("open", async () => {
   const categories = await Category.insertMany([
     { name: "Mint" },
-    { name: "Used" },
+    { name: "Damaged" },
     { name: "Slightly Played" },
   ]);
 
