@@ -12,10 +12,12 @@ db.once("open", async () => {
 
   const products = await Product.insertMany([
     {
-      name: "Pokemon Card1",
-      description: "Card Card Card",
-      price: "2.99",
-      quantity: "2",
+      name: "Charizard",
+      description: "OG Card",
+      price: "200.99",
+      quantity: "1",
+      image:
+        "https://res.cloudinary.com/kevin-cloud/image/upload/v1634056651/Pokemon/Charizard_syg1ky.jpg",
       category: categories[0]._id,
     },
     {

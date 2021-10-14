@@ -1,8 +1,8 @@
-/* body {
+body {
   margin: 1rem;
   display: flex;
   flex-direction: column;
   height: calc(100vh - 2rem);
   background-image: url(../images/starterbackground.jpg);
   overflow: auto;
-} */
+}
