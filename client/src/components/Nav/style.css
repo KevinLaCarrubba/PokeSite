@@ -1,0 +1,8 @@
+.loginUl {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin-top: -63px;
+  margin-right: 15px;
+}
