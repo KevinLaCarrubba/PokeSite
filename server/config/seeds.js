@@ -30,21 +30,9 @@ db.once("open", async () => {
   console.log("products seeded");
 
   await User.create({
-    username: "hungyiu1",
-    email: "hungyiu@email.com",
-    password: "password1",
-  });
-
-  await User.create({
-    username: "lukas1",
-    email: "lukas@email.com",
-    password: "password1",
-  });
-
-  await User.create({
-    username: "kevin1",
-    email: "kevin@email.com",
-    password: "password1",
+    username: "test",
+    email: "test@email.com",
+    password: "password",
   });
 
   console.log("users seeded");
