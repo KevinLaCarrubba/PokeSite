@@ -7,8 +7,8 @@ import Upload from "../components/Cloudinary";
 const Home = () => {
   return (
     <div className="container">
-      <CategoryMenu />
       <Upload />
+      <CategoryMenu />
       <ProductList />
       <Cart />
     </div>

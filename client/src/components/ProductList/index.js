@@ -9,9 +9,6 @@ import spinner from "../../assets/spinner.gif";
 import "./style.css";
 import { valueToObjectRepresentation } from "@apollo/client/utilities";
 
-// const CLOUDINARY_URL =
-//   "https://466915752841286:myzMNDlF2dTOIE_iUMZoLysE_ng@api.cloudinary.com/v1_1/kevin-loud/resources/image";
-
 function ProductList() {
   const [state, dispatch] = useStoreContext();
 
@@ -20,13 +17,6 @@ function ProductList() {
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
   useEffect(() => {
-    //use effect fetch
-    // fetch(CLOUDINARY_URL)
-    //   .then((res) => res.json())
-    //   .then((json) => {
-    //     this.setState({ items: json });
-    //   });
-
     if (data) {
       dispatch({
         type: UPDATE_PRODUCTS,
