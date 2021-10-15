@@ -1,4 +1,6 @@
 import React from "react";
+import Pokedex from "../../assets/Pokedex.png";
+import "./style.css";
 
 export default function Upload() {
   window.cloudinary.openUploadWidget(
@@ -39,18 +41,18 @@ export default function Upload() {
     (err, info) => {
       if (!err) {
         console.log("Upload Widget event - ", info);
+        // console.log(info.data.event);
       }
     }
   );
   return (
     <button
       id="upload_widget"
-      className="cloudinary-button"
       onClick={() => {
         Upload();
       }}
     >
-      Upload
+      <img src={Pokedex} alt="pokedex" className="pokeDex"></img>
     </button>
   );
 }

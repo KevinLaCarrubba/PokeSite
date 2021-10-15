@@ -1,0 +1,14 @@
+button {
+  background: black;
+  border: black;
+  max-width: 85px;
+  max-height: 60px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.pokeDex {
+  max-height: 60px;
+}
