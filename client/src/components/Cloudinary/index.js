@@ -40,7 +40,7 @@ export default function Upload() {
     },
     (err, info) => {
       if (!err) {
-        console.log("Upload Widget event - ", info);
+        // console.log("Upload Widget event - ", info);
         // console.log(info.data.event);
       }
     }
