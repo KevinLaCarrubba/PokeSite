@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ShowWidget() {
+export default function Upload() {
   window.cloudinary.openUploadWidget(
     {
       cloudName: "kevin-cloud",
@@ -47,10 +47,10 @@ export default function ShowWidget() {
       id="upload_widget"
       className="cloudinary-button"
       onClick={() => {
-        ShowWidget();
+        Upload();
       }}
     >
-      Upload files
+      Upload
     </button>
   );
 }
