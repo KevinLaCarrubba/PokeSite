@@ -5,3 +5,27 @@ h2 {
 h3 {
   color: white;
 }
+
+.cardBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardImg {
+  height: 250px;
+}
+
+.cardName {
+  color: white;
+  text-align: center;
+}
+
+.buttonStyle {
+  background: white;
+  border: 15px;
+  height: 25px;
+  text-align-last: right;
+}

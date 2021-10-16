@@ -11,7 +11,6 @@ const server = new ApolloServer({
   resolvers,
   context: authMiddleware,
 });
-const axios = require("axios");
 
 server.applyMiddleware({ app });
 
