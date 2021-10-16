@@ -2,7 +2,7 @@ import { gql } from "@apollo/client";
 
 export const QUERY_CARDS = gql`
   query getCardImages {
-    images {
+    getCardImages {
       public_id
       url
     }

@@ -8,6 +8,7 @@ const resolvers = {
   Query: {
     getCardImages: async (parent, args, context) => {
       // if (context.user) {
+      console.log("1");
       const response = await axios.get(
         "https://466915752841286:myzMNDlF2dTOIE_iUMZoLysE_ng@api.cloudinary.com/v1_1/kevin-cloud/resources/image"
       );
@@ -20,10 +21,6 @@ const resolvers = {
       return await Category.find();
     },
     products: async (parent, { category, name }) => {
-      const response = await axios.get(
-        "https://466915752841286:myzMNDlF2dTOIE_iUMZoLysE_ng@api.cloudinary.com/v1_1/kevin-cloud/resources/image"
-      );
-      console.log(response.data.resources);
       const params = {};
 
       if (category) {
