@@ -39,8 +39,8 @@ const typeDefs = gql`
   }
 
   type Images {
-    public_id: String!
-    url: String!
+    public_id: String
+    url: String
   }
 
   type Query {

@@ -7,20 +7,23 @@ const axios = require("axios");
 const resolvers = {
   Query: {
     getCardImages: async (parent, args, context) => {
-      //i was excited .. let me be
-      if (context.user) {
-        const response = await axios.get(
-          "https://466915752841286:myzMNDlF2dTOIE_iUMZoLysE_ng@api.cloudinary.com/v1_1/kevin-cloud/resources/image"
-        );
-        console.log(response.data.resources);
-        return response.data.resources;
-      }
-      throw new AuthenticationError("Not logged in");
+      // if (context.user) {
+      const response = await axios.get(
+        "https://466915752841286:myzMNDlF2dTOIE_iUMZoLysE_ng@api.cloudinary.com/v1_1/kevin-cloud/resources/image"
+      );
+      console.log(response.data.resources);
+      return response.data.resources;
+      // }
+      // throw new AuthenticationError("Not logged in");
     },
     categories: async () => {
       return await Category.find();
     },
     products: async (parent, { category, name }) => {
+      const response = await axios.get(
+        "https://466915752841286:myzMNDlF2dTOIE_iUMZoLysE_ng@api.cloudinary.com/v1_1/kevin-cloud/resources/image"
+      );
+      console.log(response.data.resources);
       const params = {};
 
       if (category) {
