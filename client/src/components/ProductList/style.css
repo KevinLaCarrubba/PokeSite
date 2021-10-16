@@ -22,3 +22,10 @@ h3 {
   color: white;
   text-align: center;
 }
+
+.buttonStyle {
+  background: white;
+  border: 15px;
+  height: 25px;
+  text-align-last: right;
+}

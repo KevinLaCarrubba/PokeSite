@@ -37,6 +37,7 @@ function ProductList() {
             <p className="cardName" key={item.public_id}>
               {item.public_id}
             </p>
+            <button className="buttonStyle">Add to cart</button>
           </div>
         ))
       )}
