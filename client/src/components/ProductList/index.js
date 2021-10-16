@@ -27,15 +27,17 @@ function ProductList() {
     },
   });
   return (
-    <div>
+    <div className="cardBlock">
       {images === null ? (
         <div>Loading...</div>
       ) : (
         images.map((item, key) => (
-          <>
-            <img src={item.url} key={key} />
-            <p>{item.public_id}</p>
-          </>
+          <div key={key}>
+            <img className="cardImg" src={item.url} key={item.url} />
+            <p className="cardName" key={item.public_id}>
+              {item.public_id}
+            </p>
+          </div>
         ))
       )}
     </div>
