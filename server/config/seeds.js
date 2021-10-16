@@ -17,14 +17,16 @@ db.once("open", async () => {
       price: "200.99",
       quantity: "1",
       image:
-        "https://res.cloudinary.com/kevin-cloud/image/upload/v1634056651/Pokemon/Charizard_syg1ky.jpg",
+        "http://res.cloudinary.com/kevin-cloud/image/upload/v1634310020/Charizard.jpg",
       category: categories[0]._id,
     },
     {
-      name: "Card2",
-      description: "Cards Cards",
+      name: "Pikachu",
+      description: "The one and only",
       price: "3.99",
       quantity: "3",
+      image:
+        "http://res.cloudinary.com/kevin-cloud/image/upload/v1634315096/Pikachu.jpg",
       category: categories[0]._id,
     },
   ]);

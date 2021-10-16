@@ -1,4 +1,13 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
+
+export const QUERY_CARDS = gql`
+  query getCardImages {
+    images {
+      public_id
+      url
+    }
+  }
+`;
 
 export const QUERY_PRODUCTS = gql`
   query getProducts($category: ID) {
@@ -25,7 +34,7 @@ export const QUERY_CHECKOUT = gql`
 `;
 
 export const QUERY_ALL_PRODUCTS = gql`
-  {
+  query {
     products {
       _id
       name
@@ -40,7 +49,7 @@ export const QUERY_ALL_PRODUCTS = gql`
 `;
 
 export const QUERY_CATEGORIES = gql`
-  {
+  query {
     categories {
       _id
       name
@@ -49,7 +58,7 @@ export const QUERY_CATEGORIES = gql`
 `;
 
 export const QUERY_USER = gql`
-  {
+  query {
     user {
       username
       orders {

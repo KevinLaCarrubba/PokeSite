@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server-express');
+const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
   type Category {
@@ -38,7 +38,13 @@ const typeDefs = gql`
     user: User
   }
 
+  type Images {
+    public_id: String
+    url: String
+  }
+
   type Query {
+    getCardImages: [Images]
     categories: [Category]
     products(category: ID, name: String): [Product]
     product(_id: ID!): Product

@@ -8,8 +8,24 @@ import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif";
 import "./style.css";
 import { valueToObjectRepresentation } from "@apollo/client/utilities";
+import { QUERY_CARDS } from "../../utils/queries";
 
 function ProductList() {
+  // const { loading, data } = useQuery(QUERY_CARDS);
+
+  // useEffect(() => {
+  //   if (data) {
+  //     console.log(data.images);
+  //   }
+  // });
+
+  // return (
+  //   <div>
+  //     {/* <img src={data.getCardImages.url}></img> */}
+  //     <h3>Hello ! Look at me ! Im on the page !</h3>
+  //   </div>
+  // );
+
   const [state, dispatch] = useStoreContext();
 
   const { currentCategory } = state;
@@ -68,5 +84,4 @@ function ProductList() {
     </div>
   );
 }
-
 export default ProductList;

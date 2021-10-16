@@ -24,11 +24,12 @@
   top: 0.5rem;
   right: 0.5rem;
   cursor: pointer;
-  color: var(--tertiary);
+  color: white;
 }
 
 .cart .close:hover {
   text-decoration: underline;
+  color: white;
 }
 
 .cart-closed {
@@ -72,4 +73,8 @@
     position: relative;
     margin: 0 auto;
   }
+}
+
+.white {
+  color: white;
 }
