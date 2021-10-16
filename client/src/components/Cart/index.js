@@ -106,12 +106,7 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <h3>
-          <span role="img" aria-label="shocked">
-            😱
-          </span>
-          You haven't added anything to your cart yet!
-        </h3>
+        <h3>There are no items in Pokéball !</h3>
       )}
     </div>
   );
