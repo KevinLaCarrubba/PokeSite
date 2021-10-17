@@ -1,0 +1,25 @@
+.description {
+  display: flex;
+  color: white;
+  font-size: 18px;
+  flex-wrap: wrap;
+  max-width: 50%;
+}
+
+.price {
+  color: white;
+}
+
+.price strong {
+  font-weight: bold;
+}
+.buttonStyle {
+  background: white;
+  border: 15px;
+  height: 25px;
+  text-align-last: right;
+}
+
+.detail {
+  width: 200px;
+}

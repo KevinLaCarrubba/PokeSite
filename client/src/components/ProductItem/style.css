@@ -25,12 +25,14 @@ h3 {
 }
 
 .buttonStyle {
+  color: black;
   background: white;
-  border: 15px;
+  border-radius: 15px;
   height: 25px;
   text-align-last: right;
 }
 
 .margin {
   flex: 1 0 20%;
+  margin-bottom: 2rem;
 }
