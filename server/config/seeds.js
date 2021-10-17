@@ -23,6 +23,8 @@ db.once("open", async () => {
       image:
         "http://res.cloudinary.com/kevin-cloud/image/upload/v1634310020/Charizard.jpg",
       category: categories[0]._id,
+      price: "200.99",
+      quantity: "1",
     },
     {
       name: "Pikachu",
@@ -32,6 +34,8 @@ db.once("open", async () => {
       image:
         "http://res.cloudinary.com/kevin-cloud/image/upload/v1634315096/Pikachu.jpg",
       category: categories[0]._id,
+      price: "200.99",
+      quantity: "1",
     },
   ]);
 
