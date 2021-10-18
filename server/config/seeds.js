@@ -172,6 +172,17 @@ db.once("open", async () => {
     password: "admin",
   });
 
+  await User.create({
+    username: "order",
+    email: "order@email.com",
+    password: "order",
+    orders: [
+      {
+        products: [products[0]._id, products[0]._id, products[1]._id],
+      },
+    ],
+  });
+
   console.log("users seeded");
 
   process.exit();
