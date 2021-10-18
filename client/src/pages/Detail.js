@@ -14,6 +14,7 @@ import { QUERY_PRODUCTS } from "../utils/queries";
 import { idbPromise } from "../utils/helpers";
 import spinner from "../assets/spinner.gif";
 import "./css/detail.css";
+import CommentList from "../components/CommentList";
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -113,6 +114,7 @@ function Detail() {
             src={`${currentProduct.image}`}
             alt={currentProduct.name}
           />
+          <CommentList comments={currentProduct.comments} />
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
