@@ -8,11 +8,10 @@ const resolvers = {
   Query: {
     getCardImages: async (parent, args, context) => {
       // if (context.user) {
-      console.log("1");
       const response = await axios.get(
         "https://466915752841286:myzMNDlF2dTOIE_iUMZoLysE_ng@api.cloudinary.com/v1_1/kevin-cloud/resources/image"
       );
-      console.log(response.data.resources);
+      // console.log(response.data.resources);
       return response.data.resources;
       // }
       // throw new AuthenticationError("Not logged in");
@@ -140,6 +139,19 @@ const resolvers = {
         { new: true }
       );
     },
+    addComment: async (parent, { _id, commentText }) => {
+      return Product.findOneAndUpdate(
+        { _id: _id },
+        {
+          $addToSet: { comments: { commentText } },
+        },
+        {
+          new: true,
+          runValidators: true,
+        }
+      );
+    },
+
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 

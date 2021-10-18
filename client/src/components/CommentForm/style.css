@@ -1,0 +1,7 @@
+.buttonStyle {
+  color: black;
+  background: white;
+  border-radius: 15px;
+  height: 25px;
+  text-align-last: right;
+}

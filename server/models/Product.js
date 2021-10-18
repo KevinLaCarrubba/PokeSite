@@ -3,9 +3,6 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const productSchema = new Schema({
-  _id: {
-    type: Number
-  },
   name: {
     type: String,
     required: true,
@@ -27,6 +24,16 @@ const productSchema = new Schema({
     min: 0,
     default: 0,
   },
+  comments: [
+    {
+      commentText: {
+        type: String,
+        required: true,
+        minlength: 1,
+        maxlength: 280,
+      },
+    },
+  ],
   category: {
     type: Schema.Types.ObjectId,
     ref: "Category",

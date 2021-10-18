@@ -2,7 +2,7 @@ import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 import "./style.css";
-
+import { QUERY_USER } from "../../utils/queries";
 function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
@@ -15,6 +15,15 @@ function Nav() {
                 alt="pokemon-font"
                 border="0"
               ></img>
+            </Link>
+          </li>
+          <li className="mx-1">
+            <Link to="/upcoming">
+              <img
+                src="https://fontmeme.com/permalink/211018/a33ae0861ca3f1915d711a3889d79fba.png"
+                alt="pokemon-font"
+                border="0"
+              />
             </Link>
           </li>
           <li className="mx-1">
