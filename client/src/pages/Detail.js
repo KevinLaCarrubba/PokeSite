@@ -15,6 +15,7 @@ import { idbPromise } from "../utils/helpers";
 import spinner from "../assets/spinner.gif";
 import "./css/detail.css";
 import CommentList from "../components/CommentList";
+import CommentForm from "../components/CommentForm";
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -114,6 +115,7 @@ function Detail() {
             src={`${currentProduct.image}`}
             alt={currentProduct.name}
           />
+          <CommentForm _id={currentProduct._id} />
           <CommentList comments={currentProduct.comments} />
         </div>
       ) : null}

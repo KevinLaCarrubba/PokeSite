@@ -47,7 +47,6 @@ export const ADD_COMMENT = gql`
       comments {
         _id
         commentText
-        createdAt
       }
     }
   }

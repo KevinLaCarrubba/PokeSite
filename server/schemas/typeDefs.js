@@ -19,6 +19,7 @@ const typeDefs = gql`
 
   type Comment {
     _id: ID
+    name: [User]
     commentText: String
   }
   type Order {
