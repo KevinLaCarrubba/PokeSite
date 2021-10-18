@@ -10,24 +10,7 @@ import "./style.css";
 import { valueToObjectRepresentation } from "@apollo/client/utilities";
 import { QUERY_CARDS } from "../../utils/queries";
 
-// const price = [
-//   "$34.99",
-//   "$244.99",
-//   "$134.99",
-//   "$26.99",
-//   "$540.99",
-//   "$2.99",
-//   "14.99",
-//   "$17.99",
-//   "$23.99",
-//   "$5.99",
-//   "$22.99",
-//   "$11.99",
-//   "$12.99",
-// ];
-
 function ProductList() {
-  // var randomPrice = price[Math.floor(Math.random() * price.length)];
   // const [images, setImages] = useState(null);
   // const { loading } = useQuery(QUERY_CARDS, {
   //   onCompleted(data) {

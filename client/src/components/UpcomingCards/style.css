@@ -1,0 +1,32 @@
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+.cardBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardImg {
+  height: 250px;
+}
+
+.cardName {
+  margin-top: 0;
+  color: white;
+  text-align: center;
+}
+
+.buttonStyle {
+  background: white;
+  border: 15px;
+  height: 25px;
+  text-align-last: right;
+}

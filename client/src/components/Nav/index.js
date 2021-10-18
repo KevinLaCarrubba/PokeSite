@@ -18,6 +18,15 @@ function Nav() {
             </Link>
           </li>
           <li className="mx-1">
+            <Link to="/upcoming">
+              <img
+                src="https://fontmeme.com/permalink/211018/a33ae0861ca3f1915d711a3889d79fba.png"
+                alt="pokemon-font"
+                border="0"
+              />
+            </Link>
+          </li>
+          <li className="mx-1">
             {/* this is not using the Link component to logout or user and then refresh the application to the start */}
             <a href="/" onClick={() => Auth.logout()}>
               <img
