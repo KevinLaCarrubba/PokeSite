@@ -6,9 +6,9 @@ h3 {
   color: white;
 }
 
-.cardBlock {
+.upcomingBlock {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;

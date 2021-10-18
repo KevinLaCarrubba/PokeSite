@@ -10,6 +10,7 @@ import { idbPromise } from "../../utils/helpers";
 import "./style.css";
 
 function CategoryMenu() {
+  debugger;
   const [state, dispatch] = useStoreContext();
 
   const { categories } = state;

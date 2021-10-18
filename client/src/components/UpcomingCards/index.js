@@ -14,8 +14,8 @@ function UpcomingList() {
     },
   });
   return (
-    <div className="cardBlock">
-      <h5>Upcoming Cards</h5>
+    <div className="upcomingBlock">
+      <h2>Upcoming Cards</h2>
       {images === null ? (
         <div>Loading...</div>
       ) : (

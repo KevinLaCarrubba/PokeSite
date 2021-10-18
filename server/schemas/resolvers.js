@@ -9,7 +9,7 @@ const resolvers = {
     getCardImages: async (parent, args, context) => {
       // if (context.user) {
       const response = await axios.get(
-        "https://466915752841286:myzMNDlF2dTOIE_iUMZoLysE_ng@api.cloudinary.com/v1_1/kevin-cloud/resources/image"
+        "https://466915752841286:myzMNDlF2dTOIE_iUMZoLysE_ng@api.cloudinary.com/v1_1/kevin-cloud/resources/image/tags/Upcoming"
       );
       // console.log(response.data.resources);
       return response.data.resources;
