@@ -18,8 +18,11 @@ export const QUERY_PRODUCTS = gql`
       price
       quantity
       image
+      comments {
+        commentText
+      }
       category {
-        _id
+        name
       }
     }
   }

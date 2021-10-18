@@ -139,6 +139,19 @@ const resolvers = {
         { new: true }
       );
     },
+    addComment: async (parent, { _id, commentText }) => {
+      return Product.findOneAndUpdate(
+        { _id: _id },
+        {
+          $addToSet: { comments: { commentText } },
+        },
+        {
+          new: true,
+          runValidators: true,
+        }
+      );
+    },
+
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 
