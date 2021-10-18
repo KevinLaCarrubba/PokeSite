@@ -36,7 +36,7 @@ function ProductItem(item) {
   return (
     <div className="margin">
       <Link to={`/products/${_id}`}>
-        <img alt={name} src={`${image}`} className="cardImg" />
+        <img alt={name} src={`${image}`} className="cardImg shadowfilter" />
         <p className="cardName">{name}</p>
       </Link>
       <div>

@@ -24,7 +24,7 @@ db.once("open", async () => {
       Weakness / Resistance / Retreat Cost:Fx2 / / 1 `,
       image:
         "https://res.cloudinary.com/kevin-cloud/image/upload/v1634495623/Pikachu.jpg",
-      category: categories[2]._id,
+      category: categories[1]._id,
       price: "31.50",
       quantity: "4",
     },
@@ -97,7 +97,7 @@ db.once("open", async () => {
       Weakness / Resistance / Retreat Cost:Fx2 / / 3`,
       image:
         "https://res.cloudinary.com/kevin-cloud/image/upload/v1634495346/Snorlax.jpg",
-      category: categories[2]._id,
+      category: categories[0]._id,
       price: "2.19",
       quantity: "27",
     },

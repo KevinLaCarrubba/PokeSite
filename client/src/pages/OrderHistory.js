@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import { useQuery } from "@apollo/client";
 import { QUERY_USER } from "../utils/queries";
+import "./css/detail.css";
 
 function OrderHistory() {
   const { data } = useQuery(QUERY_USER);
@@ -29,7 +30,7 @@ function OrderHistory() {
                   {order.products.map(({ _id, image, name, price }, index) => (
                     <div key={index} className="card px-1 py-1">
                       <Link to={`/products/${_id}`}>
-                        <img alt={name} src={`${image}`} />
+                        <img className="cardImg" alt={name} src={`${image}`} />
                         <p>{name}</p>
                       </Link>
                       <div>
